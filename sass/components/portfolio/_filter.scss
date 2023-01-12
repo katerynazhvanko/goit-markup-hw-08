@@ -1,0 +1,21 @@
+.filter{padding-top: 94px;}
+.filter-list{display:flex; 
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;}
+.filter-list__item{margin-right: 8px;
+    &:last-child{margin-right: 0;}}
+.filter-list__button{
+    display: flex;
+    text-align: center;
+    background-color: #F5F4FA; 
+    color:$titleColor;
+    box-shadow: none;
+    transition: background-color 250ms $animation, 
+    color 250ms $animation, box-shadow 250ms $animation;
+    &:hover, &:focus {background-color: $accentColor;
+        color:$backgroundColor;
+        box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);}}
+.filter-list__text{
+    padding: 6px 22px;
+    @include font(500,16,1.6);}

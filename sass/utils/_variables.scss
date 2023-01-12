@@ -1,0 +1,34 @@
+@mixin font($fw,$fs,$lh,$ls:0.03){
+    font-weight: $fw;
+    font-size: $fs+px;
+    line-height: $lh;
+    letter-spacing:$ls+em;}
+
+@mixin mobile {
+    @media screen and (min-width:480px){@content;}}
+@mixin tablet {
+    @media screen and (min-width:768px){@content;}}
+@mixin desktop{
+    @media screen and (min-width:1200px){@content;}}
+@mixin retina {
+    @media (min-device-pixel-ratio:2),
+    (min-resolution:192dpi),
+    (min-resolution:2dppx){@content;}}    
+
+$backgroundColor:#FFFFFF;
+$titleColor:#212121;
+$textColor:#757575;
+$accentColor:#2196F3;
+$iconFill:#AFB1B8;
+$footerColor:#2F303A;
+$buttonHover:#188CE8;
+$animation:cubic-bezier(0.4, 0, 0.2, 1);
+$borderColor:#EEEEEE;
+$blank:#FFFFFF;
+$secondoryColor:#F5F4FA;
+$gradient:linear-gradient(to right, rgba(47,48,58,0.4), rgba(47,48,58,0.4));
+
+@mixin display{
+    display: flex;
+    align-items: center;
+    justify-content: center;}

@@ -1,0 +1,60 @@
+/* Повторюючі значення */
+.communications{
+    text-decoration:none;
+    @include font(400,14,1.7);}
+.page-footer__title{
+    @include font(700,14,1.1);
+    text-transform: uppercase;
+    color:$backgroundColor;}
+
+    /*спеціальні значення */
+
+.page-footer{padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:$footerColor;}
+.page-footer__content{display: flex; align-items: baseline;}
+.page-footer__logo{display: block;
+    margin-bottom: 20px;
+    font-style: normal;}
+.studio--inverse{color:$backgroundColor;}
+.page-footer__list{font-style:normal;}
+.page-footer__item{margin-bottom: 9px;}
+.page-footer__adress{color:$backgroundColor;}
+.page-footer__contact{
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms $animation;
+    &:hover, &:focus{color:$accentColor;}}
+.footer-subscribe{margin-left: 70px;}
+.footer-subscribe__list{
+    @include display;
+    margin-top: 20px;}
+.footer-subscribe__item{margin-right: 10px;}
+.footer-subscribe__link{ 
+    @include display;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    fill: $backgroundColor;
+    transition: background-color 250ms $animation;
+    &:hover, &:focus{background-color: $accentColor;}}
+.footer-sing{margin-left: 93px;}
+.footer-sing__form{
+    @include display;
+    margin-top: 20px;}
+.footer-sing__input{
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border:1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: $footerColor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+.footer-sing__btn{
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 200px;}
+.footer-sing__text{padding:10px 26px;}
+.footer-sing__icon{margin-left: 10px; fill:$secondoryColor;}

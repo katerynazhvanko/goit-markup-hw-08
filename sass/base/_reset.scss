@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    background-color: $backgroundColor;
+    color: $textColor; 
+    font-family: Roboto, Geneva, Arial, Helvetica, sans-serif;}
+ul,h1,h2,h3,p {
+    padding:0;
+    margin:0;
+    list-style: none;}
+.link {text-decoration: none;}

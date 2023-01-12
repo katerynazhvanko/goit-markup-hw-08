@@ -1,0 +1,12 @@
+.button{
+    background-color:$accentColor;
+    border:none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 250ms $animation, box-shadow 250ms $animation;
+    &:hover, &:focus {background-color:$buttonHover;}}
+.button-text{
+    @include font(700,16,1.9,0.06);
+    color:$backgroundColor;}

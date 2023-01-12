@@ -1,0 +1,49 @@
+.banner{
+    width:100%;
+    // max-width:1600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: $gradient, url(../../image/bannermob1.jpg);
+    background-color: $footerColor;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    @include retina {
+        background-image: $gradient, url(../../image/bannermob2.jpg);
+    }
+    @include mobile {
+        padding-top: 118px; 
+        padding-bottom:198px; 
+        height: 400px;
+        background-image: $gradient, url(../../image/bannertab1.jpg);
+        @include retina {
+        background-image: $gradient, url(../../image/bannertab2.jpg)}
+    }
+    @include tablet {
+        padding-top: 118px; 
+        padding-bottom:198px; 
+        height: 400px;
+        background-image: $gradient, url(../../image/bannerdesk1.jpg);
+        @include retina {
+        background-image: $gradient, url(../../image/bannerdesk2.jpg)}
+    }
+    @include desktop{
+        padding-top: 200px; 
+        padding-bottom: 200px; 
+        height: 600px;}
+}
+.banner__title{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-bottom: 40px;
+    margin-left: auto; 
+    margin-right: auto;
+    color:$backgroundColor;
+    @include font(900,24,1.6,0.06);
+    text-transform: uppercase;
+    @include mobile{width: 360px; @include font(900,26,1.6,0.06);}
+    @include tablet{margin-bottom: 30px;}
+    @include desktop{width: 700px; @include font(900,44,1.4,0.06);}
+}
+.banner__btn{padding: 10px 24px;}
