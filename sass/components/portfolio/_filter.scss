@@ -1,8 +1,11 @@
-.filter{padding-top: 94px;}
-.filter-list{display:flex; 
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: center;}
+.filter{
+    padding-top: 60px;
+    @include desktop{padding-top: 94px;}}
+.filter-list{
+    // display:flex; 
+    margin-bottom: 50px;}
+    // align-items: center;
+    // justify-content: center;}
 .filter-list__item{margin-right: 8px;
     &:last-child{margin-right: 0;}}
 .filter-list__button{

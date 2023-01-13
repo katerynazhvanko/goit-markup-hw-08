@@ -1,6 +1,7 @@
 .mobmenu{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100vw;
     height: 100vh;
     padding-top: 48px;
@@ -11,10 +12,14 @@
         display:flex;
         flex-direction: column;
         justify-content: space-between;
-        overflow: auto;}
+        overflow-y: scroll;
+        z-index: 999;
+        transform:translateX(100%);
+        transition: transform 250ms $animation;
+        &.is-open {transform: translateX(0);}}
     @include tablet {display:none;}
 }
-.mobmenu .is-open{transform: translateX(0);}
+// .mobmenu .is-open{transform: translateX(0);}
 .mobmenu__open{margin-right: auto;
 @include tablet {display:none;}}
 .mobmenu__close{
