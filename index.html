@@ -21,38 +21,13 @@
       <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link">Портфоліо</a></li>
       <li class="site-nav__item"><a href="./" class="link site-nav__link">Контакти</a></li>
     </ul>
-    <button js-open-menu type="button" class="mobmenu__open"><svg width="24" height="24" class="open-icon"><use href="./image/icons.svg#icon-mobmenu"></use></svg></button>
+    <button type="button" class="mobmenu__open js-open-menu"><svg width="24" height="24" class="open-icon"><use href="./image/icons.svg#icon-mobmenu"></use></svg></button>
     </nav>
     <div class="site-contact">
     <ul class="site-contact__list">
       <li class="site-contact__item"><a class="link site-contact__link" href="mailto:info@devstudio.com"><svg class="site-contact__icon" width="16" height="12"><use href="./image/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
       <li class="site-contact__item"><a class="link site-contact__link" href="tel:+380961111111"><svg class="site-contact__icon" width="10" height="16"><use href="./image/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
     </ul>
-    </div>
-    <!-- <button js-open-menu type="button" class="mobmenu__open"><svg width="24" height="24" class="open-icon"><use href="./image/icons.svg#icon-mobmenu"></use></svg></button> -->
-    <div class="mobmenu">
-      <div class="container is-open" js-menu-container>
-    <div class="mobmenu__top">
-      <button js-close-menu type="button" class="mobmenu__close"><svg width="19" height="19" class="close-icon"><use href="./image/icons.svg#icon-close"></use></svg></button>
-      <ul class="mobmenu__list">
-        <li class="mobmenu__item"><a href="./" class="link mobmenu__link mobmenu__link--active">Студія</a></li>
-        <li class="mobmenu__item"><a href="./portfolio.html" class=" link mobmenu__link">Портфоліо</a></li>
-        <li class="mobmenu__item"><a href="./" class="link mobmenu__link">Контакти</a></li>
-      </ul>
-    </div>
-    <div class="mobmenu_bottom">
-      <ul class="mobmenu-contact__list">
-        <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
-        <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      </ul>
-      <ul class="mobmenu-sub__list">
-        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link first" href="#">Instagram</a></li>
-        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Twitter</a></li>
-        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Facebook</a></li>
-        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link last" href="#">LinkedIn</a></li>
-      </ul>
-    </div>
-    </div>
     </div>
     </div>
   </header> 
@@ -312,7 +287,7 @@
   </section>
   <!-- Клієнти -->
   <section class="clients section">
-    <div class="contain">
+    <div class="container">
       <h2 class="title">Постійні клієнти</h2>
       <ul class="clients__list">
         <li class="clients__item">
@@ -367,9 +342,9 @@
       <a href="./" class="emblem page-footer__logo"><span class="web">Web</span><span class="studio studio--inverse">Studio</span></a>
       <address>
       <ul class="page-footer__list">
-        <li class="page-footer__item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="communications page-footer__adress">м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li class="page-footer__item"><a href="mailto:info@devstudio.com" class="communications page-footer__contact">info@devstudio.com</a></li>
-        <li class="page-footer__item"><a href="tel:+380961111111" class="communications page-footer__contact">+38 096 111 11 11</a></li>
+        <li class="page-footer__item"><a href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9" target="_blank" rel="noopener noreferrer nofollow" class="link communications page-footer__adress">м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li class="page-footer__item"><a href="mailto:info@devstudio.com" class="link communications page-footer__contact">info@devstudio.com</a></li>
+        <li class="page-footer__item"><a href="tel:+380961111111" class="link communications page-footer__contact">+38 096 111 11 11</a></li>
       </ul>
       </address>
       </div>
@@ -458,6 +433,30 @@
     </div>
      <button type="submit" class="button modal__btn button-text">Відправити</button>
    </form> 
+</div>
+</div>
+<div class="mobmenu is-open js-menu-container">
+  <div class="container ">
+<div class="mobmenu__top">
+  <button type="button" class="mobmenu__close js-close-menu"><svg width="19" height="19" class="close-icon"><use href="./image/icons.svg#icon-close"></use></svg></button>
+  <ul class="mobmenu__list">
+    <li class="mobmenu__item"><a href="./" class="link mobmenu__link mobmenu__link--active">Студія</a></li>
+    <li class="mobmenu__item"><a href="./portfolio.html" class=" link mobmenu__link">Портфоліо</a></li>
+    <li class="mobmenu__item"><a href="./" class="link mobmenu__link">Контакти</a></li>
+  </ul>
+</div>
+<div class="mobmenu_bottom">
+  <ul class="mobmenu-contact__list">
+    <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+    <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+  </ul>
+  <ul class="mobmenu-sub__list">
+    <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link first" href="#">Instagram</a></li>
+    <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Twitter</a></li>
+    <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Facebook</a></li>
+    <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link last" href="#">LinkedIn</a></li>
+  </ul>
+</div>
 </div>
 </div>
 <script src="./js/modal.js"></script>

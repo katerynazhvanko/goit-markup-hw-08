@@ -6,35 +6,39 @@
     height: 100vh;
     padding-top: 48px;
     padding-bottom: 48px;
-    background-color: $blank;
-    transform: translateX(100%);
-    >.container {height: 100%;
+    background-color: $blank;;
+    transform:translateX(-100%);
+    transition: transform 250ms $animation;
+    &.is-open {transform: translateX(0);}
+    >.container {
+        height: 100%;
         display:flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-between;}
         overflow-y: scroll;
         z-index: 999;
-        transform:translateX(100%);
-        transition: transform 250ms $animation;
-        &.is-open {transform: translateX(0);}}
     @include tablet {display:none;}
 }
-// .mobmenu .is-open{transform: translateX(0);}
-.mobmenu__open{margin-right: auto;
+.mobmenu__open{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    border:none;
+    fill: $titleColor;
+    transition: fill 250ms $animation;
+    & :hover, :focus {fill:$accentColor;}
 @include tablet {display:none;}}
 .mobmenu__close{
-    @include display;
     position: absolute;
-    top: 16px;
-    right: 16px;
-    margin-left: auto;
+    top: 20px;
+    right: 20px;
     margin-bottom: 30px;
     border:none;
+    fill: $titleColor;
     background-color: transparent;
     transition: fill 250ms $animation;
-    &:hover, &:focus{fill:$accentColor;}}
-.close-icon {@include display;
-    fill:aqua;}
+      & :hover, :focus{fill:$accentColor;}}
 .mobmenu__item:not(:last-child){margin-bottom: 30px;}
 .mobmenu__link{
     margin-bottom: 30px;
@@ -61,4 +65,3 @@ color:$textColor;}
 .first {padding-left: 0}
 .last {padding-right: 0;
     border: none;}
-.close-icon{fill:black;}

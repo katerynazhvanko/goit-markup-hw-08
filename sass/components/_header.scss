@@ -1,12 +1,14 @@
 .page-header__container{
-    @include mobile{min-width: 480px;}
-    // display: flex;
-}
-// .site-nav{@include display;}
-.site-nav__logo {
     padding-top: 16px;
     padding-bottom: 16px;
-    
+    @include mobile{min-width: 480px;}
+    @include tablet {display: flex;
+    padding:0;}
+}
+.site-nav{
+    @include tablet {@include display;}
+}
+.site-nav__logo {
     @include font(700,18,1.16);
     @include mobile {@include font(700,24,1.16);}
     @include tablet {padding-top:25px; padding-bottom: 25px;margin-right: 90px;}
@@ -38,12 +40,20 @@
 .site-contact{display: none;
     @include tablet {display: flex;}
     @include desktop {display: flex; margin-left: auto;}}
-.site-contact__list {display: flex; margin-left: auto;}
+.site-contact__list {
+    @include tablet {display: flex;
+    flex-direction: column; 
+    justify-content: space-evenly;
+    margin-left: 96px;}
+    @include desktop {display:flex;
+    flex-direction: row;}
+}
 .site-contact__item {
     display: inline-flex;
     align-items: center;
-    margin-right: 50px;
+    @include desktop {margin-right: 50px;
     &:last-child{margin-right: 0;}}
+}
 .site-contact__link{
     display: inline-flex;
     align-items: center;

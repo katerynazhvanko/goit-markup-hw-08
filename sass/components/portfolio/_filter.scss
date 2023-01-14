@@ -2,14 +2,16 @@
     padding-top: 60px;
     @include desktop{padding-top: 94px;}}
 .filter-list{
-    // display:flex; 
-    margin-bottom: 50px;}
-    // align-items: center;
-    // justify-content: center;}
+    display:flex;
+    flex-wrap: wrap; 
+    margin-bottom: 40px;
+    @include tablet {@include display; margin-bottom: 30px;}
+    @include desktop {margin-bottom: 50px;}}
 .filter-list__item{margin-right: 8px;
     &:last-child{margin-right: 0;}}
 .filter-list__button{
     display: flex;
+    margin-bottom: 15px;
     text-align: center;
     background-color: #F5F4FA; 
     color:$titleColor;

@@ -12,24 +12,25 @@
     <title>Портфоліо</title>
 </head>
 <body>
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header__container">
         <nav class="site-nav">
           <a href="./" class="emblem site-nav__logo"><span class="web">Web</span><span class="studio">Studio</span></a>
         <ul class="site-nav__list">
-          <li class="site-nav__item"><a href="./index.html" class="site-nav__link">Студія</a></li>
-          <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--active">Портфоліо</a></li>
-          <li class="site-nav__item"><a href="./" class="site-nav__link">Контакти</a></li>
+          <li class="site-nav__item"><a href="./index.html" class="link site-nav__link">Студія</a></li>
+          <li class="site-nav__item"><a href="./portfolio.html" class="link site-nav__link site-nav__link--active">Портфоліо</a></li>
+          <li class="site-nav__item"><a href="./" class="link site-nav__link">Контакти</a></li>
         </ul>
+        <button type="button" class="mobmenu__open js-open-menu"><svg width="24" height="24" class="open-icon"><use href="./image/icons.svg#icon-mobmenu"></use></svg></button>
       </nav>
       <div class="site-contact">
         <ul class="site-contact__list">
-          <li class="site-contact__item"><a class="site-contact__link" href="mailto:info@devstudio.com"><svg class="site-contact__icon" width="16" height="12"><use href="./image/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
-          <li class="site-contact__item"><a class="site-contact__link" href="tel:+380961111111"><svg class="site-contact__icon" width="10" height="16"><use href="./image/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
+          <li class="site-contact__item"><a class="link site-contact__link" href="mailto:info@devstudio.com"><svg class="site-contact__icon" width="16" height="12"><use href="./image/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a></li>
+          <li class="site-contact__item"><a class="link site-contact__link" href="tel:+380961111111"><svg class="site-contact__icon" width="10" height="16"><use href="./image/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
         </ul>
       </div>
       </div>
-      </header>  -->
+      </header> 
     <main>
       <section class="filter section">
       <div class="container" >
@@ -268,5 +269,30 @@
       </div>
       </div>
     </footer> -->
-</body>
+    <div class="mobmenu is-open js-menu-container">
+      <div class="container">
+    <div class="mobmenu__top">
+      <button type="button" class="mobmenu__close js-close-menu"><svg width="19" height="19" class="close-icon"><use href="./image/icons.svg#icon-close"></use></svg></button>
+      <ul class="mobmenu__list">
+        <li class="mobmenu__item"><a href="./" class="link mobmenu__link mobmenu__link">Студія</a></li>
+        <li class="mobmenu__item"><a href="./portfolio.html" class="link mobmenu__link mobmenu__link--active">Портфоліо</a></li>
+        <li class="mobmenu__item"><a href="./" class="link mobmenu__link">Контакти</a></li>
+      </ul>
+    </div>
+    <div class="mobmenu_bottom">
+      <ul class="mobmenu-contact__list">
+        <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link tel" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="mobmenu-contact__item"><a class="link mobmenu-contact__link mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>
+      <ul class="mobmenu-sub__list">
+        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link first" href="#">Instagram</a></li>
+        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Twitter</a></li>
+        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link" href="#">Facebook</a></li>
+        <li class="mobmenu-sub__item"><a target="_blank" rel="noopener noreferrer" class="link mobmenu-sub__link last" href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+    </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
 </html>

@@ -1,6 +1,5 @@
 /* Повторюючі значення */
 .communications{
-    text-decoration:none;
     @include font(400,14,1.7);}
 .page-footer__title{
     @include font(700,14,1.1);
@@ -12,8 +11,12 @@
 .page-footer{padding-top: 60px;
     padding-bottom: 60px;
     background-color:$footerColor;}
-.page-footer__content{display: flex; align-items: baseline;}
-.page-footer__logo{display: block;
+.page-footer__content{
+    @include mobile {min-width: 480px;}
+    @include desktop {display: flex; align-items: baseline;}
+}
+.page-footer__logo{
+    display: block;
     margin-bottom: 20px;
     font-style: normal;}
 .studio--inverse{color:$backgroundColor;}
