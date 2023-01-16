@@ -4,29 +4,29 @@
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    background-image: $gradient, url(../../image/bannermob1.jpg);
+    background-image: $gradient, url(../image/bannermob1.jpg);
     background-color: $footerColor;
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
     @include retina {
-        background-image: $gradient, url(./image/bannermob2.jpg);
+        background-image: $gradient, url(../image/bannermob2.jpg);
     }
     @include mobile {
         padding-top: 118px; 
         padding-bottom:198px; 
         height: 400px;
-        background-image: $gradient, url(./image/bannertab1.jpg);
+        background-image: $gradient, url(../image/bannertab1.jpg);
         @include retina {
-        background-image: $gradient, url(./image/bannertab2.jpg)}
+        background-image: $gradient, url(../image/bannertab2.jpg)}
     }
     @include tablet {
         padding-top: 118px; 
         padding-bottom:198px; 
         height: 400px;
-        background-image: $gradient, url(./image/bannerdesk1.jpg);
+        background-image: $gradient, url(../image/bannerdesk1.jpg);
         @include retina {
-        background-image: $gradient, url(./image/bannerdesk2.jpg)}
+        background-image: $gradient, url(../image/bannerdesk2.jpg)}
     }
     @include desktop{
         padding-top: 200px; 
