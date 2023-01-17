@@ -11,12 +11,14 @@
     position: absolute;
     top: 50%;
     left:50%;
-    width: 100%;
-    // min-width: 530px;
     padding: 40px;
     background-color:$backgroundColor;
     transform:translate(-50%,-50%) scale(1);
-    transition: transform 250ms $animation;}
+    transition: transform 250ms $animation;
+    @media screen and (min-width: 320px){width: 95%;}
+    @include mobile {width: 450px};
+    @include desktop {min-width: 530px};
+}
 .backdrop.is-hidden{
     visibility:hidden;
     opacity:0;
@@ -50,14 +52,16 @@
     display:flex;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 448px;
+    width: 100%;
+    @include mobile {width: 370px;};
+    @include desktop {width: 448px;}
     &::placeholder{padding: 12px;}}
 .modal__label{
     margin-bottom: 4px;
     @include font(400,12,1.2,0.01);
     color: $textColor;}
 .modal__input, .modal__textarea{
-    width:100%;
+    width: 100%;
     height: 40px;
     padding-left: 42px;
     border:1px solid rgba(33, 33, 33, 0.2);
@@ -86,12 +90,15 @@
     .modal__input:focus + & {fill: $accentColor;}}
 .agreement{
     @include display;
-    @include font(400,14,1.7);
+    @include font (400,11,1.2,0.02);
+    @include mobile {@include font(400,12,1.2)};
+    @include desktop {@include font(400,14,1.7)};
     color:var$textColor;
     cursor: pointer;}
-    // &:hover, &:focus{font-size: 15px;}}
 .agreement__link{
-    @include font(400,14,1.7);
+    @include font (400,11,1.2,0.02);
+    @include mobile {@include font(400,12,1.2,0.03)};
+    @include desktop {@include font(400,14,1.7)};
     padding-left: 5px;
     color:$accentColor;
     transition: font-size 250ms $animation;}

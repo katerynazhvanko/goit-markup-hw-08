@@ -12,30 +12,38 @@
     padding-bottom: 60px;
     background-color:$footerColor;}
 .page-footer__content{
-    align-items: center;
+    text-align: center;
     justify-content: center;
     @include mobile {min-width: 480px;}
+    @include tablet {display: flex; flex-wrap: wrap;}
     @include desktop {display: flex; align-items: baseline;}
 }
 .page-footer__logo{
-    // display: block;
-    margin-bottom: 20px;
+    display: block;
+    margin-bottom: 28px;
     font-style: normal;}
 .studio--inverse{color:$backgroundColor;}
 .page-footer__list{font-style:normal;}
-.page-footer__item{margin-bottom: 9px;}
+.page-footer__item{
+    margin-bottom: 12px;
+    @include desktop {margin-bottom: 9px;}
+}
 .page-footer__adress{color:$backgroundColor;}
 .page-footer__contact{
     color: rgba(255, 255, 255, 0.6);
     transition: color 250ms $animation;
     &:hover, &:focus{color:$accentColor;}}
-.footer-subscribe{margin-left: 70px;}
+.footer-subscribe{
+    margin-top: 60px;
+    @include tablet {margin-left: 190px; margin-top: 0;};
+    @include desktop {margin-left: 70px;};
+}
 .footer-subscribe__list{
-    @include tablet {@include display};
+    @include display;
     margin-top: 20px;}
 .footer-subscribe__item{margin-right: 10px;}
 .footer-subscribe__link{ 
-    @include tablet {@include display};
+    @include display;
     background: rgba(255,255,255,0.1);
     border-radius: 50%;
     width: 44px;
@@ -43,23 +51,32 @@
     fill: $backgroundColor;
     transition: background-color 250ms $animation;
     &:hover, &:focus{background-color: $accentColor;}}
-.footer-sing{margin-left: 93px;}
+.footer-sing{
+    margin-top: 60px;
+    @include desktop {margin-left: 93px;}
+}
 .footer-sing__form{
-    @include tablet {@include display};
-    margin-top: 20px;}
+    justify-items: center;
+    @include mobile {flex-wrap: wrap; width: 450px; margin-top: 20px;}
+    @include desktop {display: flex; flex-wrap: nowrap; align-items: baseline;};
+    }
 .footer-sing__input{
-    margin-right: 12px;
-    width: 358px;
+    width: 75%;
     height: 50px;
     padding: 15px 16px;
     border:1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: $footerColor;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    @include mobile {width: 450px;};
+    @include desktop {width: 358px; margin-right: 12px;};
+}
 .footer-sing__btn{
-    @include tablet {display: inline-flex};
+    margin-top: 20px;
+    display: inline-flex;
     align-items: center;
     text-align: center;
-    width: 200px;}
+    width: 200px;
+    @include desktop {margin-top: 0;}}
 .footer-sing__text{padding:10px 26px;}
 .footer-sing__icon{margin-left: 10px; fill:$secondoryColor;}
