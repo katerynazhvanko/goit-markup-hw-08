@@ -1408,8 +1408,10 @@ ul, h1, h2, h3, p {
   }
 }
 
-.footer-sing__form {
-  justify-items: center;
+@media screen and (min-width: 320px) {
+  .footer-sing__form {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width: 480px) {
   .footer-sing__form {
@@ -1430,7 +1432,7 @@ ul, h1, h2, h3, p {
 }
 
 .footer-sing__input {
-  width: 75%;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
