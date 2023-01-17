@@ -53,12 +53,12 @@
     &:hover, &:focus{background-color: $accentColor;}}
 .footer-sing{
     margin-top: 60px;
-    @include desktop {margin-left: 93px;}
+    @include desktop {margin-left: 93px;text-align: start;}
 }
 .footer-sing__form{
     justify-items: center;
     @include mobile {flex-wrap: wrap; width: 450px; margin-top: 20px;}
-    @include desktop {display: flex; flex-wrap: nowrap; align-items: baseline;};
+    @include desktop {display: flex; flex-wrap: nowrap;}
     }
 .footer-sing__input{
     width: 75%;

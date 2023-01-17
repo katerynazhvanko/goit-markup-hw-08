@@ -1404,6 +1404,7 @@ ul, h1, h2, h3, p {
 @media screen and (min-width: 1200px) {
   .footer-sing {
     margin-left: 93px;
+    text-align: start;
   }
 }
 
@@ -1425,9 +1426,6 @@ ul, h1, h2, h3, p {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 
