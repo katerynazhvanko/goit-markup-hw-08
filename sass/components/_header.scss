@@ -65,7 +65,8 @@
     display: inline-flex;
     align-items: center;
     color:$textColor;
-    @include font(500,14,1.1);
+    @include tablet {@include font (500,12,1.2.0.02);};
+    @include desktop {@include font(500,14,1.1,0.02);};
     transition: color 250ms $animation;
     &:hover, &:focus {color:$accentColor;}}
 .site-contact__icon{
