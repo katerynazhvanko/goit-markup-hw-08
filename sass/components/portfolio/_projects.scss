@@ -44,7 +44,7 @@
     height: 100%;
     transform:translateY(101%);
     transition: transform 250ms $animation;
-    .projects__item:hover & {transform: translateY(0);}
+    .projects__item:hover, :focus & {transform: translateY(0);}
 }
 .projects__description{
     position: absolute;
