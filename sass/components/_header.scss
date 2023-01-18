@@ -2,10 +2,15 @@
     padding-top: 16px;
     padding-bottom: 16px;
     @include mobile{min-width: 480px;}
-    @include tablet {display: flex;
-    padding:0;}
+    @include tablet {
+        display: flex;
+        padding-top: 0;
+        padding-bottom: 0;}
 }
 .site-nav{
+    @media screen and (max-width:767px){
+        display: flex;
+        justify-content: space-between;}
     @include tablet {@include display;}
 }
 .site-nav__logo {
@@ -31,7 +36,7 @@
     &::after{
         position: absolute;
         content:" ";
-        bottom: -2px;
+        bottom: -1px;
         left:0;
         width: 100%;
         height: 4px;
@@ -44,9 +49,11 @@
     @include tablet {display: flex;
     flex-direction: column; 
     justify-content: space-evenly;
-    margin-left: 96px;}
-    @include desktop {display:flex;
-    flex-direction: row;}
+    margin-left: 96px;
+    margin-right: auto;}
+    @include desktop {
+        display:flex;
+        flex-direction: row;}
 }
 .site-contact__item {
     display: inline-flex;
@@ -66,3 +73,10 @@
     fill:currentColor;
     transition: fill 250ms $animation;
     &:hover {fill: $accentColor;}}
+.envelope{
+    @include tablet {width: 14px; height: 10px;}
+    @include desktop {width: 16px;height: 12px;}}
+.smartphone{
+    @include tablet {width: 10px; height: 14px;}
+    @include desktop {width: 10px;height: 16px;}
+}

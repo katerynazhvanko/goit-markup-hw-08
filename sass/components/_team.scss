@@ -4,11 +4,11 @@
     background-color:$secondoryColor;
     @media screen and (min-width:1200px){padding-top: 94px;}
     }
-.team__name{margin-bottom: 30px;
+.team__name{
+    margin-bottom: 10px;
+    text-align: center;
     color:$titleColor;
     @include font(500,16,1.2);
-    text-align: center;
-    @media screen and (min-width:1200px){margin-bottom: 50px;}
 }
 .team__list{
     align-items: center;
@@ -22,19 +22,23 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $backgroundColor;
     @media screen and (max-width:479px){margin-bottom: 30px;}
-    @media screen and (min-width:768px){flex-basis: calc((100% - 60px)/2);}
+    @media screen and (min-width:768px){flex-basis: calc((100% - 30px)/2);}
     @media screen and (max-width:1199px){&:nth-child(2n){margin-right: 0;}}
     @media screen and (min-width:1200px){flex-basis: calc((100% - 90px)/4);
         &:last-child{margin-right: 0;}}
 }
 .team__speciality{
+    margin-bottom: 16px;
     @include font(400,16,1.2); 
     text-align: center;}
-.team__text{padding-top: 30px; padding-bottom: 30px;}
+.team__text{
+    padding-top: 30px; 
+    padding-bottom: 24px;
+    @include desktop {padding-bottom: 30px;}
+}
 .team-sub__list{
     @include display;
-    gap: 10px;
-    margin-top: 12px;}
+    gap: 10px;}
 .team-sub__link{
     @include display;
     width: 44px;
