@@ -745,11 +745,6 @@ ul, h1, h2, h3, p {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
-  .feature__picture {
-    margin-bottom: 30px;
-  }
-}
 
 .feature__title {
   margin-bottom: 10px;
@@ -761,15 +756,9 @@ ul, h1, h2, h3, p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
-  .feature__title {
-    margin-top: 30px;
-  }
-}
 @media screen and (min-width: 768px) {
   .feature__title {
     margin-bottom: 10px;
-    margin-top: 0;
     text-align: left;
   }
 }
@@ -1106,11 +1095,7 @@ ul, h1, h2, h3, p {
   -webkit-column-gap: 8px;
      -moz-column-gap: 8px;
           column-gap: 8px;
-}
-@media screen and (min-width: 480px) {
-  .filter-list {
-    margin-bottom: 40px;
-  }
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .filter-list {
@@ -1506,6 +1491,7 @@ ul, h1, h2, h3, p {
   width: 100%;
   height: 50px;
   padding: 15px 16px;
+  color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2F303A;
@@ -1737,7 +1723,7 @@ ul, h1, h2, h3, p {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: #000000;
 }
 
 .modal__wrapped {
@@ -1768,8 +1754,10 @@ ul, h1, h2, h3, p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-weight: 400;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var #757575;
@@ -1794,7 +1782,7 @@ ul, h1, h2, h3, p {
 
 .agreement__link {
   font-weight: 400;
-  font-size: 11px;
+  font-size: 10px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   padding-left: 5px;
