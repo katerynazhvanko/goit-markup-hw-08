@@ -48,7 +48,8 @@
 .site-contact__list {
     @include tablet {display: flex;
     flex-direction: column; 
-    justify-content: space-evenly;
+    justify-content: center;
+    row-gap: 10px;
     margin-left: 96px;
     margin-right: auto;}
     @include desktop {

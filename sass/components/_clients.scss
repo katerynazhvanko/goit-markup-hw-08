@@ -1,9 +1,7 @@
 .clients{
     padding-top: 60px;
     padding-bottom: 60px;
-    @include mobile {padding-top: 60px; padding-bottom: 60px;}
-    @include tablet {padding-top: 60px; padding-bottom: 60px;}
-    @include desktop {padding-top: 94px; margin-top: 0;}}
+    @include desktop {margin-top: 0; padding-top: 94px; padding-bottom: 94px;}}
 .clients__list{
     align-items: center;
     justify-content: center;

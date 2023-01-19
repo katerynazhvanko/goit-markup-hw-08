@@ -286,9 +286,10 @@ ul, h1, h2, h3, p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    row-gap: 10px;
     margin-left: 96px;
     margin-right: auto;
   }
@@ -560,8 +561,8 @@ ul, h1, h2, h3, p {
 .banner {
   width: 100%;
   max-width: 1600px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -844,12 +845,14 @@ ul, h1, h2, h3, p {
 
 .team {
   padding-top: 60px;
+  padding-bottom: 60px;
   margin-top: 0;
   background-color: #F5F4FA;
 }
 @media screen and (min-width: 1200px) {
   .team {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -983,22 +986,11 @@ ul, h1, h2, h3, p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 480px) {
-  .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .clients {
-    padding-top: 94px;
     margin-top: 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
